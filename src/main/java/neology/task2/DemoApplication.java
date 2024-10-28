@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EntityScan(basePackages = "netology.task2.demo")
-@EnableJpaRepositories(basePackages = "netology.task2.demo")
+@EntityScan(basePackages = "neology.task2.domain")
+@EnableJpaRepositories(basePackages = "neology.task2.repository")
 public class DemoApplication {
 
 	public static void main(String[] args) {
