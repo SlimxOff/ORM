@@ -1,5 +1,6 @@
-package neology.task2;
+package neology.task2.controller;
 
+import neology.task2.domain.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

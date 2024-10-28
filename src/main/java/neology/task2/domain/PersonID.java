@@ -1,4 +1,4 @@
-package neology.task2;
+package neology.task2.domain;
 
 import java.io.Serializable;
 import java.util.Objects;

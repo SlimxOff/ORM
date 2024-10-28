@@ -1,4 +1,4 @@
-package neology.task2;
+package neology.task2.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
