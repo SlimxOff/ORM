@@ -8,7 +8,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "PERSONS")
-@IdClass(PersonID.class)
+@IdClass(PersonId.class)
 public class Person {
 
     @Id

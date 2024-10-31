@@ -3,17 +3,17 @@ package neology.task2.domain;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class PersonID implements Serializable {
+public class PersonId implements Serializable {
     private String name;
     private String surname;
     private int age;
 
     // Конструкторы, геттеры и сеттеры
 
-    public PersonID() {
+    public PersonId() {
     }
 
-    public PersonID(String name, String surname, int age) {
+    public PersonId(String name, String surname, int age) {
         this.name = name;
         this.surname = surname;
         this.age = age;
@@ -21,11 +21,35 @@ public class PersonID implements Serializable {
 
     // Геттеры и сеттеры
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        PersonID personId = (PersonID) o;
+        PersonId personId = (PersonId) o;
         return age == personId.age &&
                 Objects.equals(name, personId.name) &&
                 Objects.equals(surname, personId.surname);
